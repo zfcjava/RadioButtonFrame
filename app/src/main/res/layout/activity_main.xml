@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="live.example.com.lianxi.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/container">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+       >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_border"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+
+            android:background="@color/white"
+            android:id="@+id/rg">
+
+            <RadioButton
+                android:id="@+id/rb_find_course"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/findcourse"
+                android:gravity="center"
+                android:text="TAB1"
+                android:textColor="@color/font_selsect"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:drawableTop="@drawable/minecourse"
+                android:gravity="center"
+                android:text="TAB2"
+                android:layout_marginLeft="141dp"
+                android:textSize="10sp"
+                android:id="@+id/rb_my_course"
+                android:textColor="@color/font_unselsect"/>
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>
